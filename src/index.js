@@ -8,6 +8,6 @@ checkbox.addEventListener('change', function() {
     } else {
         this.nextElementSibling.classList.remove('checked');
     }
-    console.log(this.checked);
+    //console.log(this.checked);
 
 });
