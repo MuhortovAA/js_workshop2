@@ -1,13 +1,13 @@
 'use strict';
 //checkbox
-const checkbox = document.getElementById('discount-checkbox');
+const checkbox = document.querySelectorAll('.filter-check_checkbox');
 
-checkbox.addEventListener('change', function() {
-    if (this.checked) {
-        this.nextElementSibling.classList.add('checked');
-    } else {
-        this.nextElementSibling.classList.remove('checked');
-    }
-    //console.log(this.checked);
-
+checkbox.forEach((elem) => {
+    elem.addEventListener('change', function() {
+        if (this.checked) {
+            this.nextElementSibling.classList.add('checked');
+        } else {
+            this.nextElementSibling.classList.remove('checked');
+        }
+    });
 });
